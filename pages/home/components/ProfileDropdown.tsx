@@ -27,7 +27,7 @@ export default function ProfileDropdown () {
     ];
 
     return (
-        <div className="absolute bottom-15 left-2.5 p-4 rounded dark:border-white dark:bg-sideNavDark  dark:text-white   shadow">
+        <div className="absolute bottom-15 left-2.5 p-4 bg-white text-black rounded dark:border-white dark:bg-sideNavDark  dark:text-white   shadow">
             <ul>
                 {ProfieJson.map((item, index) => (
                     <li
