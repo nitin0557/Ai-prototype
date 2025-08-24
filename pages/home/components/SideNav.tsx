@@ -2,9 +2,9 @@ import React, {useState, useEffect, useCallback} from "react";
 import { Plus, Menu } from "lucide-react";
 import { useAuth } from "@/data/contexts/AuthContext";
 import SearchList from "@/pages/home/components/SearchList";
-import { ProfileDropdown } from "@/pages/home/components/ProfileDropdown";
 import MoreVertOutlinedIcon from "@mui/icons-material/MoreVertOutlined";
 import { useTheme } from "next-themes";
+import ProfileDropdown from "@/pages/home/components/ProfileDropdown";
 
 type Chat = {
     id: string;

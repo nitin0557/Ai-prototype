@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import ModelSelector from "@/pages/home/components/ModelSelector";
 import PromptEditor from "@/pages/home/components/PromptEditor";
-import ChatOutput from "@/pages/home/components/ChatOutput";
+import ChatOutput from "@/ChatOutput";
 import SideNav from "@/pages/home/components/SideNav";
 import { sendMessageToMockAPI, Message } from "@/data/apis/mockApi";
 
-export const Main = () => {
+export default function Main () {
     const [messages, setMessages] = useState<Message[]>([]);
 
     const handleSend = async (prompt: string, type: "text" | "image" | "file") => {

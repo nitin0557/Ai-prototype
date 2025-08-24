@@ -9,7 +9,7 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useAuth } from "@/data/contexts/AuthContext"; // ✅ import your auth context
 
-export const ProfileDropdown = () => {
+export default function ProfileDropdown () {
     const { theme, setTheme } = useTheme();
     const { logout } = useAuth(); // ✅ assuming you have a logout function in context
 
